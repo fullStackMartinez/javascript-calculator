@@ -10,9 +10,14 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<h2>JavaScript Calculator</h2>
-		<p>This is a simple calculator that I've built using JavaScript</p>
-		<form name="calculator">
+		<div class="container">
+		<div class="jumbotron mt-3">
+			<h1 class="display-3">JavaScript Calculator</h1>
+			<p class="lead">Let's do some Math!</p>
+			<hr class="my-4">
+			<p>This is a simple calculator that I've built using JavaScript, HTML5, CSS3 and Bootstrap 4</p>
+		</div>
+		<form name="calculator" class="d-flex justify-content-center">
 			<table>
 				<thead>
 					<tr>
@@ -40,7 +45,7 @@
 					<td><input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value += '*'"></td>
 				</tr>
 				<tr>
-					<td><input type="button" id="clear" name="clear" value="C" onclick="calculator.display.value = ''">
+					<td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''">
 					</td>
 					<td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
 					<td><input type="button" class="operator" name="equal" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
@@ -49,6 +54,7 @@
 			</table>
 
 		</form>
+		</div>
 
 	</body>
 </html>
